@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BinHistory</string>
+    <string name="dataBinInfo">Данные Bin карты</string>
+    <string name="getDataBinInfo">Получить данные</string>
+    <string name="writeBin">Ввведите Bin</string>
+</resources>
