@@ -1,9 +1,9 @@
 package com.example.binhistory.model
 
-interface useBin{
-    fun getBinInfo(bin:String):BinInfo
-    fun setBinHistory(bin:String)
-    fun getBinHistory(): List<String>
+interface UseBin{
+    suspend fun getBinInfo(bin:String):BinInfo
+    suspend  fun setBinHistory(bin:String)
+    suspend fun getBinHistory(): List<String>
 }
 
 data class BinInfo (

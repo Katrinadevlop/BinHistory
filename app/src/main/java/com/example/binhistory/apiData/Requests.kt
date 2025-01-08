@@ -5,6 +5,6 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface Requests {
-    @GET("/{bin}")
+    @GET("bin/{bin}")
     suspend fun getBinInfo(@Path("bin") bin: String):BinInfo
 }
