@@ -3,4 +3,5 @@
     <string name="dataBinInfo">Данные Bin карты</string>
     <string name="getDataBinInfo">Получить данные</string>
     <string name="writeBin">Ввведите Bin</string>
+    <string name="openHistory">Открыть историю</string>
 </resources>

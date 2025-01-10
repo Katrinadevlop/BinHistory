@@ -1,10 +1,11 @@
 package com.example.binhistory.apiData
 
 import com.example.binhistory.model.BinInfo
+import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface Requests {
-    @GET("bin/{bin}")
-    suspend fun getBinInfo(@Path("bin") bin: String):BinInfo
+    @GET("{bin}")
+    suspend fun getBinInfo(@Path("bin") bin: String): Response<BinInfo>
 }

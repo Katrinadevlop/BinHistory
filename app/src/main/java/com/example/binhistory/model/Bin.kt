@@ -1,21 +1,24 @@
 package com.example.binhistory.model
 
-interface UseBin{
-    suspend fun getBinInfo(bin:String):BinInfo
-    suspend  fun setBinHistory(bin:String)
-    suspend fun getBinHistory(): List<String>
-}
-
-data class BinInfo (
-    val country: String,
-    val coordinates: String,
-    val cardType:String,
-    val bankInfo: BankInfo
+data class Country(
+    val name: String?,
+    val code: String?,
+    val emoji: String?,
+    val currency: String?,
+    val latitude: Double?,
+    val longitude: Double?
 )
 
 data class BankInfo(
-    val url: String,
-    val phone: String,
-    val website:String,
-    val city:String
+    val name: String?,
+    val url: String?,
+    val phone: String?,
+    val city: String?
+)
+
+data class BinInfo(
+    val country: Country?,
+    val coordinates: String?,
+    val scheme: String?,
+    val bankInfo: BankInfo?
 )
